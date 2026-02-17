@@ -26,4 +26,4 @@ The project is organized as follows:
 The project was created by **Augustusen**.
 
 ## License
-This project is open-source and can be used for non-commercial purposes.
+This project is open-source and can be used for non-commercial purposes.# nsk-zlatna-luka
