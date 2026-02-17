@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Augustin">
+    <title>Odabir ulaznica | NŠK Zlatna luka</title>
+    <meta name="description" content="Odaberite željenu količinu ulaznica za utakmice NŠK Zlatna luka.">
+    <meta name="keywords" content="ulaznice, kupovina, NŠK Zlatna luka, sportski klub, Sukošan">
+    <link rel="stylesheet" href="css/stilovi.css">
+    <script src="kupovina-ulaznica.js"></script>
+</head>
+
+<!-- Tijelo dokumenta -->
+<body>
+
+    <!-- Sekcija s pozadinom -->
+    <section class="yellow-green-background">
+
+        <!-- Slogan -->
+        <p class="motto">Jedan tim, jedan san, jedna pobjeda!</p>
+
+    <!-- Glavno zaglavlje -->
+    <header class="header">
+
+        <!-- Kontejner zaglavlja -->
+        <div class="header-container">
+
+        <!-- Logo -->
+            <img src="slike/zlatna-luka.png" alt="Logo NŠK Zlatna luka" class="logo">
+        
+            <!-- Naslov -->    
+            <h1 class="title">NŠK Zlatna luka</h1>
+
+        <!-- Navigacija --> 
+        <nav>
+            <ul>
+
+                <!-- Linkovi za navigaciju -->
+                <li><a href="index.html">Naslovnica</a></li>
+
+                <!-- Dropdown O klubu -->
+                <li class="dropdown">
+                    <a href="#klub" class="dropbtn">O klubu</a>
+                    <div class="dropdown-content" id="klub">
+                        <a href="klub/prva-momcad.html">Prva momčad</a>
+                        <a href="klub/strucni-stozer.html">Stručni stožer</a>
+                        <a href="klub/skola-nogometa.html">Škola nogometa</a>
+                        <a href="klub/stadion.html">Stadion</a>
+                    </div>
+                </li>
+
+                <li><a href="galerija.html">Galerija slika</a></li>
+                <li><a href="ulaznice.html">Ulaznice</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        </div> <!-- Kraj kontejnera zaglavlja -->
+
+    </header> <!-- Kraj glavnog zaglavlja -->
+
+    </section> <!-- Kraj sekcije s pozadinom -->
+
+    <!-- Sadržaj stranice -->
+    <main>
+
+        <!-- Sekcija za odabir ulaznica -->
+        <section class="ticket-selection">
+
+            <!-- Naslov i opis -->
+            <h2>Odabir ulaznica</h2>
+            <p>Odaberite željenu količinu ulaznica za nadolazeće utakmice NŠK Zlatna luka.</p>
+    
+                <!-- Forma za odabir ulaznica -->
+                <form id="ticket-form" onsubmit="return buyTickets()">
+
+                    <!-- Polje za unos broja ulaznica za odrasle -->
+                    <label for="adult">Odrasle osobe (5€ po ulaznici):</label>
+                    <input type="number" id="adult" name="adult" min="0" value="0"><br>
+                    
+                    <!-- Polje za unos broja ulaznica za djecu -->
+                    <label for="child">Djeca (2€ po ulaznici):</label>
+                    <input type="number" id="child" name="child" min="0" value="0"><br>
+                    
+                    <!-- Polje za unos članske iskaznice -->
+                    <label for="member">Članska iskaznica (popust 10%):</label>
+                    <input type="number" id="member" name="member" placeholder="Unesite 6 znamenki" maxlength="6"><br>
+
+                    
+                    <!-- Padajući izbornik za odabir utakmice -->
+                    <label for="match">Odaberite utakmicu:</label>
+                    <select id="match" name="match">
+                        <option value="" disabled selected hidden></option>
+                        <option value="match1">NK Pakoštane - Stadion Krč | 19.05.2024. | 17:30</option>
+                        <option value="match2">NK Galovac - Stadion Dešenj | 26.05.2024. | 17:30</option>
+                    </select><br>
+
+                    <!-- Gumb za kupnju ulaznica -->
+                    <button type="submit">Kupi ulaznice</button>
+                </form>
+
+                <!-- Element za računanje ukupne cijene -->
+                <p id="total-price"></p>
+    
+        </section>
+
+    </main> <!-- Kraj sadržaja stranice -->
+
+    <!-- Podnožje -->
+    <footer>
+        <!-- Sadržaj podnožja -->
+        <div class="footer-content">
+    
+            <!-- Tekst autorskih prava -->
+            <p class="footer-text">&copy; 2024 NŠK Zlatna luka. Sva prava pridržana.</p>
+    
+            <!-- Poveznice -->
+            <ul class="footer-links">
+                <li><a href="pravila-privatnosti.html">Pravila privatnosti</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="kolacici.html">Kolačići</a></li>
+                <li><a href="uvjeti-koristenja.html">Uvjeti korištenja</a></li>
+                <li><a href="ugovor-o-obradi.html">Ugovori o obradi</a></li>
+                <li><a href="sigurnost.html">Sigurnost</a></li>
+            </ul>
+    
+            <!-- Ikone društvenih mreža -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="slike/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="slike/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="slike/instagram.png" alt="Instagram"></a>
+            </div>
+    
+        </div> <!-- Kraj sadržaja podnožja -->
+    </footer> <!-- Kraj podnožja -->
+
+</body> <!-- Kraj tijela dokumenta -->
+
+</html> 

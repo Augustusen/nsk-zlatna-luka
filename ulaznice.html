@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Augustin">
+    <title>Ulaznice | NŠK Zlatna luka</title>
+    <meta name="description" content="Rezervirajte ulaznice za nadolazeće utakmice NŠK Zlatna luka.">
+    <meta name="keywords" content="ulaznice, rezervacija, NŠK Zlatna luka, sportski klub, Sukošan">
+    <link rel="stylesheet" href="css/stilovi.css">
+    <script src="ulaznice.js"></script>
+</head>
+
+<!-- Tijelo dokumenta -->
+<body>
+
+    <!-- Sekcija s pozadinom -->
+    <section class="yellow-green-background">
+
+        <!-- Slogan -->
+        <p class="motto">Jedan tim, jedan san, jedna pobjeda!</p>
+
+    <!-- Glavno zaglavlje -->
+    <header class="header">
+
+        <!-- Kontejner zaglavlja -->
+        <div class="header-container">
+
+        <!-- Logo -->
+            <img src="slike/zlatna-luka.png" alt="Logo NŠK Zlatna luka" class="logo">
+        
+            <!-- Naslov -->    
+            <h1 class="title">NŠK Zlatna luka</h1>
+
+        <!-- Navigacija --> 
+        <nav>
+            <ul>
+
+                <!-- Linkovi za navigaciju -->
+                <li><a href="index.html">Naslovnica</a></li>
+
+                <!-- Dropdown O klubu -->
+                <li class="dropdown">
+                    <a href="#klub" class="dropbtn">O klubu</a>
+                    <div class="dropdown-content" id="klub">
+                        <a href="klub/prva-momcad.html">Prva momčad</a>
+                        <a href="klub/strucni-stozer.html">Stručni stožer</a>
+                        <a href="klub/skola-nogometa.html">Škola nogometa</a>
+                        <a href="klub/stadion.html">Stadion</a>
+                    </div>
+                </li>
+
+                <li><a href="galerija.html">Galerija slika</a></li>
+                <li><a href="ulaznice.html">Ulaznice</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        </div> <!-- Kraj kontejnera zaglavlja -->
+
+    </header> <!-- Kraj glavnog zaglavlja -->
+
+    </section> <!-- Kraj sekcije s pozadinom -->
+
+    <!-- Sadržaj stranice -->
+    <main>
+        
+        <!-- Sekcija za unos podataka -->
+        <section class="ticket-info">
+            
+            <h2>Rezervacija ulaznica</h2>
+            <p>Rezervirajte ulaznice za nadolazeće utakmice NŠK Zlatna luka.</p>
+            
+            <!-- Forma za unos podataka -->
+            <form id="data-form" onsubmit="return goToTicketSelection()">
+                <label for="name">Ime i prezime:</label>
+                <input type="text" id="name" name="name" required><br>
+            
+                <label for="email">E-mail adresa:</label>
+                <input type="email" id="email" name="email" required><br>
+            
+                <label for="address">Adresa za dostavu ulaznica:</label>
+                <input type="text" id="address" name="address" placeholder="Primjer adrese: Bana Jelačića 12, 10000 Zagreb" required><br>
+            
+                <!-- Gumb za kupnju ulaznica -->
+                <button type="submit">Odaberi ulaznice</button>
+            </form>
+
+        </section>
+
+    </main> <!-- Kraj sadržaja stranice -->
+
+    <!-- Podnožje -->
+    <footer>
+        <!-- Sadržaj podnožja -->
+        <div class="footer-content">
+    
+            <!-- Tekst autorskih prava -->
+            <p class="footer-text">&copy; 2024 NŠK Zlatna luka. Sva prava pridržana.</p>
+    
+            <!-- Poveznice -->
+            <ul class="footer-links">
+                <li><a href="pravila-privatnosti.html">Pravila privatnosti</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="kolacici.html">Kolačići</a></li>
+                <li><a href="uvjeti-koristenja.html">Uvjeti korištenja</a></li>
+                <li><a href="ugovor-o-obradi.html">Ugovori o obradi</a></li>
+                <li><a href="sigurnost.html">Sigurnost</a></li>
+            </ul>
+    
+            <!-- Ikone društvenih mreža -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="slike/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="slike/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="slike/instagram.png" alt="Instagram"></a>
+            </div>
+    
+        </div> <!-- Kraj sadržaja podnožja -->
+    </footer> <!-- Kraj podnožja -->
+
+</body> <!-- Kraj tijela dokumenta -->
+
+</html> 
